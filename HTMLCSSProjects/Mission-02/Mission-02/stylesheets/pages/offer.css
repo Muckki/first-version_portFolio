@@ -1,0 +1,166 @@
+/* 오늘의 쇼핑 제안 */
+header {
+  position: relative;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 1022px;
+  height: 354px;
+}
+
+h2,
+.svg-shopping {
+  display: flex;
+  width: 234px;
+  height: 30px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.svg-shopping {
+  background-image: url("./assets/icon/shopping.svg");
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+}
+
+.offer {
+  position: relative;
+  display: flex;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  flex: 1;
+  margin-right: 5px;
+}
+
+li:last-child {
+  margin-right: 0;
+}
+
+.product {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  height: 270px;
+}
+
+.product-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 270px;
+}
+
+.product-img {
+  width: 160px;
+  height: 160px;
+  margin-top: 14px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 12px;
+}
+
+.product .badge-sale {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-red-500);
+  border-radius: 0 0 4px 0;
+  padding: 3px 10px;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--color-white);
+  line-height: 24px;
+}
+
+.product-name {
+  text-align: center;
+  width: 172px;
+  height: 17px;
+  line-height: 16.8px;
+  font-weight: 400;
+  font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: var(--color-black);
+  margin-left: 14px;
+  margin-right: 14px;
+  margin-bottom: 12px;
+}
+
+.free {
+  width: 52px;
+  height: 17px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16.8px;
+  color: var(--color-gray-700);
+  margin-left: 14px;
+  margin-bottom: 4px;
+}
+
+.badge-rocket {
+  width: 55px;
+  height: 16px;
+  margin-left: 14px;
+  margin-bottom: 4px;
+}
+
+.review {
+  display: flex;
+  align-items: center;
+}
+
+.png-stars-45 {
+  background-image: url("/HTMLCSSProjects/Mission-02/Mission-02/assets/sprites/rating-stars.png");
+  background-position: 0px -126px;
+  width: 68px;
+  height: 12px;
+  background-repeat: no-repeat;
+  margin-left: 14px;
+  margin-right: 4px;
+}
+
+.png-stars-5 {
+  background-image: url("/HTMLCSSProjects/Mission-02/Mission-02/assets/sprites/rating-stars.png");
+  background-position: 0px -140px;
+  width: 68px;
+  height: 12px;
+  background-repeat: no-repeat;
+  margin-left: 14px;
+  margin-right: 4px;
+}
+
+.png-stars-4 {
+  background-image: url("/HTMLCSSProjects/Mission-02/Mission-02/assets/sprites/rating-stars.png");
+  background-position: 0px -112px;
+  width: 68px;
+  height: 12px;
+  background-repeat: no-repeat;
+  margin-left: 14px;
+  margin-right: 4px;
+}
+
+.review-num {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.8px;
+  color: var(--color-gray-700);
+}

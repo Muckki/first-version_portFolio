@@ -1,0 +1,31 @@
+@media (max-width: 2560px) {
+  html {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1920px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media (max-width: 1440px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media (max-width: 1024px) {
+  html {
+    font-size: 7px;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 5px;
+  }
+}
+
+@media (max-width: 425px) {
+  html {
+    font-size: 3px;
+  }
+}

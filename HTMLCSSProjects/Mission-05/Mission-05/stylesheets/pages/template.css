@@ -1,0 +1,414 @@
+/* ---------------------------------------------- */
+/* 헤더                                            */
+/* ---------------------------------------------- */
+header {
+  width: 1920px;
+  height: 117px;
+  left: 0;
+  border-bottom: 1px solid var(--color-gray-100);
+}
+
+.header__inner {
+  position: relative;
+  width: 1020px;
+  height: 117px;
+  left: 450px;
+}
+
+.button--category {
+  display: flex;
+  width: 110px;
+  height: 116px;
+  background-color: var(--color-blue-600);
+  border: none;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.button--category svg {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 30px;
+  left: 40px;
+}
+
+.button--category-text {
+  position: absolute;
+  width: 45px;
+  height: 14.12px;
+  top: 72px;
+  left: 33px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.4px;
+  color: var(--color-white);
+}
+
+.button--category:focus {
+  border: 1px solid var(--color-red-500);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
+/* ---------------------------------------------- */
+/* 내비게이션                                        */
+/* ---------------------------------------------- */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation {
+  position: relative;
+  width: 1020px;
+  height: 520px;
+  left: 450px;
+}
+
+.nav-title {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.navigation__inner {
+  position: absolute;
+  width: 540px;
+  height: 500px;
+  left: 0;
+  top: 0;
+}
+
+.navigation__list:nth-child(1) {
+  position: absolute;
+  width: 180px;
+  height: 500px;
+  background-color: var(--color-white);
+  left: 0;
+  top: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.navigation__list:nth-child(2) {
+  position: absolute;
+  width: 180px;
+  height: 500px;
+  background-color: var(--color-white);
+  left: 180px;
+  top: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.navigation__list:nth-child(3) {
+  position: absolute;
+  width: 180px;
+  height: 500px;
+  background-color: var(--color-white);
+  left: 360px;
+  top: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.navigation__list:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 1px;
+  height: 500px;
+  border: 1px solid var(--color-gray-200);
+}
+
+.navigation__list li {
+  width: 170px;
+  height: 30px;
+  margin-left: 5px;
+}
+
+.navigation__list-1depth,
+.navigation__list-2depth,
+.navigation__list-3depth {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 170px;
+  height: 30px;
+  line-height: 30px;
+  box-sizing: border-box;
+  padding: 1px 0px 1px 20px;
+  margin-left: 5px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 30px;
+}
+
+.navigation-a {
+  width: 170px;
+  height: 30px;
+}
+
+.navigation__list li:nth-of-type(1) {
+  margin-top: 10px;
+}
+
+.icon {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.navigation__list-1depth {
+  gap: 4px;
+}
+
+.navigation__list-new {
+  position: absolute;
+  left: 87px;
+  width: 12px;
+  height: 12px;
+  background-image: url(/HTMLCSSProjects/Mission-05/Mission-05/assets/icon/new.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 4px;
+}
+
+.navigation__list li a:focus div,
+.navigation__list li a:hover div {
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--color-blue-600);
+}
+
+.navigation__list li a:hover .navigation__list-1depth,
+.navigation__list li a:focus .navigation__list-1depth,
+.navigation__list li a:hover .navigation__list-2depth,
+.navigation__list li a:focus .navigation__list-2depth {
+  background-image: url(/HTMLCSSProjects/Mission-05/Mission-05/assets/icon/more-right-active.svg);
+  background-repeat: no-repeat;
+  background-position: 140px 10.5px;
+}
+
+.navigation-a.is--active .navigation__list-1depth,
+.navigation-a.is--active .navigation__list-2depth {
+  color: var(--color-blue-600);
+  background-image: url(/HTMLCSSProjects/Mission-05/Mission-05/assets/icon/more-right-active.svg);
+  background-repeat: no-repeat;
+  background-position: 140px 10.5px;
+}
+
+/* ---------------------------------------------- */
+/* 메인 콘텐츠                                       */
+/* ---------------------------------------------- */
+/* 메인 콘텐츠 영역의 최소 높이 설정 */
+.main {
+  min-height: 52rem;
+}
+
+/* ---------------------------------------------- */
+/* 푸터                                            */
+/* ---------------------------------------------- */
+footer {
+  position: absolute;
+  width: 1920px;
+  height: 349px;
+  left: 0px;
+  top: 675px;
+}
+
+.footer-link {
+  position: absolute;
+  width: 1920px;
+  height: 40px;
+  left: 0;
+  top: 0;
+  background-color: var(--color-gray-200);
+}
+
+.footer-link-s {
+  position: absolute;
+  width: 1030px;
+  height: 35px;
+  top: 3px;
+  left: 445px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.footer-link-element {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.4px;
+  color: var(--color-gray-800);
+  padding: 5px 14px 6px;
+}
+
+.footer-link-element:nth-of-type(9),
+.footer-link-element:nth-of-type(13) {
+  font-weight: 700;
+}
+
+.divider {
+  font-size: 12px;
+  color: var(--color-gray-800);
+  margin-bottom: 4px;
+}
+
+.footer-bg-w {
+  position: absolute;
+  width: 1920px;
+  height: 207px;
+  left: 0;
+  top: 40px;
+  background-color: var(--color-white);
+}
+
+.footer-bg-w-s {
+  position: absolute;
+  width: 1200px;
+  height: 143px;
+  left: 360px;
+  top: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  width: 176px;
+  height: 40px;
+  background-image: url(/HTMLCSSProjects/Mission-05/Mission-05/assets/logo/logo-mono.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer-logo-text {
+  display: none;
+}
+
+.footer-info-1 {
+  width: 263px;
+  height: 143px;
+}
+
+.footer-info-1-ele {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.2px;
+  color: var(--color-gray-800);
+  margin-bottom: 12px;
+}
+
+.footer-info-2 {
+  width: 293px;
+  height: 143px;
+}
+
+.ele365 {
+  display: flex;
+}
+
+.footer-info-2-ele,
+.footer-info-2-ad,
+.footer-info-2-email {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.2px;
+  color: var(--color-gray-800);
+  margin-bottom: 8px;
+}
+
+.footer-info-2-365 {
+  width: 100px;
+  height: 19px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19.2px;
+  color: var(--color-gray-800);
+  margin-bottom: 8px;
+  box-sizing: border-box;
+}
+
+.border {
+  position: relative;
+  top: 5px;
+  width: 1px;
+  height: 12px;
+  border-right: 1px solid var(--color-gray-800);
+}
+
+.footer-info-2-ele {
+  margin-left: 15px;
+}
+
+.footer-info-2-call {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 57.6px;
+  color: var(--color-gray-800);
+  margin-bottom: 12px;
+}
+
+.footer-info-3 {
+  width: 282px;
+  height: 84px;
+}
+
+.footer-info-3-bank {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19.2px;
+  color: var(--color-gray-800);
+  margin-bottom: 8px;
+}
+
+.footer-info-3-safe {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.2px;
+  color: var(--color-gray-800);
+}
+
+.footer-bg-b {
+  position: absolute;
+  width: 1920px;
+  height: 102px;
+  top: 247px;
+  background-color: var(--color-gray-900);
+}
+
+.footer-bg-b-s {
+  position: absolute;
+  width: 1020px;
+  height: 70px;
+  left: 450px;
+  top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-copyright {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14.4px;
+  color: var(--color-gray-200);
+}
+
+.footer-sns {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.insta {
+  width: 34px;
+  height: 34px;
+  background: linear-gradient(174.12deg, #285aeb 5.61%, #bc1888 22.32%, #cc2366 36.16%, #dc2743 51.91%, #e6683c 73.38%, #f09433 91.99%);
+  border-radius: 100%;
+  position: absolute;
+  top: 36px;
+}

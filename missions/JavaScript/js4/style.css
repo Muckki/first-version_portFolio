@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #edede9;
+}
+
+:root {
+  --calendar-width: 400px;
+  --calendar-font-size: calc(var(--calendar-width) / 30);
+  --calendar-grid-size: calc(var(--calendar-width) / 7);
+}
+
+header {
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
+.calendar {
+  display: none;
+  width: var(--calendar-width);
+  font-size: calc(var(--calendar-width) / 30);
+  border: 3px dashed #d6ccc2;
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-left: 100px;
+  background-color: #f5ebe0;
+  box-shadow: 5px 5px 5px 5px #cececc;
+}
+
+.calendar-nav {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.prev-btn {
+  transform: rotate(180deg);
+}
+
+.calendar-nav button {
+  background-color: #f5ebe0;
+  color: #6c584c;
+  border: none;
+  font-size: calc(var(--calendar-width) / 30);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.calendar-nav button:hover {
+  background-color: #f5ebe0;
+  color: #020202;
+}
+
+.current-month {
+  font-size: calc(var(--calendar-width) / 30);
+  font-weight: bold;
+  text-align: center;
+}
+
+.calendar-grid {
+  width: var(--calendar-width);
+  font-size: calc(var(--calendar-width) / 30);
+  grid-template-columns: repeat(7, calc(var(--calendar-width) / 7));
+  grid-template-rows: auto;
+}
+
+.days {
+  display: grid;
+  width: var(--calendar-width);
+  font-size: calc(var(--calendar-width) / 30);
+  grid-template-columns: repeat(7, calc(var(--calendar-width) / 7));
+  font-weight: bold;
+}
+
+.day {
+  text-align: center;
+  font-size: calc(var(--calendar-width) / 30);
+}
+
+.dates {
+  width: var(--calendar-width);
+  display: grid;
+  font-size: calc(var(--calendar-width) / 30);
+  grid-template-columns: repeat(7, calc(var(--calendar-width) / 7));
+  grid-template-rows: auto;
+  box-sizing: border-box;
+}
+
+.date {
+  cursor: pointer;
+  text-align: center;
+  padding: calc(var(--calendar-width) / 30);
+}
+
+.today {
+  border: 2px dotted #588157;
+  border-radius: 50%;
+}
